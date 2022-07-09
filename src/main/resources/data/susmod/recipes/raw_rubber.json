@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "susmod:raw_rubber"
+  },
+  "result": "susmod:vinyl_disc",
+  "experience": 5
+}

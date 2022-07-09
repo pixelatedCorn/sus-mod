@@ -1,0 +1,8 @@
+{
+  "type": "susmod:dwayne_epic_cooking_recipe",
+  "ingredient": {
+    "item": "susmod:rock_ore"
+  },
+  "result": "minecraft:nether_star",
+  "experience": 50
+}

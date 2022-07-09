@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=north,lit=false": { "model": "susmod:block/dwayne_furnace", "uvlock": true },
+    "facing=east,lit=false":  { "model": "susmod:block/dwayne_furnace", "y":  90, "uvlock": true },
+    "facing=south,lit=false": { "model": "susmod:block/dwayne_furnace", "y": 180, "uvlock": true },
+    "facing=west,lit=false":  { "model": "susmod:block/dwayne_furnace", "y": 270, "uvlock": true },
+    "facing=north,lit=true": { "model": "susmod:block/dwayne_furnace_lit", "uvlock": true },
+    "facing=east,lit=true":  { "model": "susmod:block/dwayne_furnace_lit", "y":  90, "uvlock": true },
+    "facing=south,lit=true": { "model": "susmod:block/dwayne_furnace_lit", "y": 180, "uvlock": true },
+    "facing=west,lit=true":  { "model": "susmod:block/dwayne_furnace_lit", "y": 270, "uvlock": true }
+  }
+}

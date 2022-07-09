@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "susmod:block/chegger_block"
+    "all": "susmod:block/rock_ore"
   }
 }

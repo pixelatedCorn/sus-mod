@@ -1,4 +1,4 @@
-package net.pixelatedcorn.susmod.items;
+package net.pixelatedcorn.susmod.item;
 
 import net.minecraft.item.MusicDiscItem;
 import net.minecraft.sound.SoundEvent;

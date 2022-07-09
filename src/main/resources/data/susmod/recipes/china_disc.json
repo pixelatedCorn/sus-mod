@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "susmod:vinyl_disc"
+    },
+    {
+      "item": "susmod:rock_ore"
+    }
+  ],
+  "result": {
+    "item": "susmod:disc_china",
+    "count": 1
+  }
+}

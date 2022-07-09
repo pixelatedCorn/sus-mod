@@ -1,0 +1,26 @@
+{
+  "thud": {
+    "subtitle": "subtitles.susmod.thud",
+    "sounds": [
+      "susmod:thud"
+    ]
+  },
+  "bingchilling": {
+    "subtitle": "subtitles.susmod.disc.bingchilling",
+    "sounds": [
+      {
+        "name": "susmod:disc/bingchilling",
+        "stream": true
+      }
+    ]
+  },
+  "china": {
+    "subtitle": "subtitles.susmod.disc.china",
+    "sounds": [
+      {
+        "name": "susmod:disc/china",
+        "stream": true
+      }
+    ]
+  }
+}

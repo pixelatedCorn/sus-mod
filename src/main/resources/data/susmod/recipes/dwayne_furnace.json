@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#F#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "susmod:rock_ore"
+        },
+        "F": {
+            "item": "minecraft:furnace"
+        }
+    },
+    "result": {
+        "item": "susmod:dwayne_furnace",
+        "count": 1
+    }
+}

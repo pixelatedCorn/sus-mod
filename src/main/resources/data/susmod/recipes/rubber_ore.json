@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "susmod:rubber_ore"
+  },
+  "result": "susmod:raw_rubber",
+  "experience": 5
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "susmod:chegger_block",
+    "susmod:jamba_block",
+    "susmod:rubber_ore",
+    "susmod:rock_ore",
+    "susmod:dwayne_furnace"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "block.susmod.chegger_block": "Chegger Block",
+  "block.susmod.rock_ore": "Dwayne \"The Rock\" Johnson Ore",
+  "block.susmod.jamba_block": "Jamba Juice Ore",
+  "block.susmod.dwayne_furnace": "Dwayne \"The Rock\" Johnson Furnace",
+  "block.susmod.rubber_ore": "Rubber Ore",
+
+  "item.susmod.disc_china": "Music Disc",
+  "item.susmod.disc_china.desc": "Zǎoshang hǎo zhōngguó",
+  "item.susmod.disc_china_2": "Music Disc",
+  "item.susmod.disc_china_2.desc": "Red Sun in The Sky",
+  "item.susmod.jamba_juice": "Jamba Juice",
+  "item.susmod.vinyl_disc": "Vinyl Disc",
+  "item.susmod.raw_rubber": "Raw Rubber",
+
+  "itemGroup.susmod.standard": "Sus Mod",
+  "itemGroup.susmod.discs": "Sus Mod Discs"
+}

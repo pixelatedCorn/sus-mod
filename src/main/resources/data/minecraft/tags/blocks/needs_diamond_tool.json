@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-
+    "susmod:chegger_block",
+    "susmod:jamba_block",
+    "susmod:rock_ore"
   ]
 }

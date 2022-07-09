@@ -1,0 +1,23 @@
+{
+	"parent": "minecraft:block/orientable",
+	"textures": {
+		"1": "susmod:block/dwayne_furnace_bottom",
+		"2": "susmod:block/dwayne_furnace_lit",
+		"3": "susmod:block/dwayne_furnace_no_face",
+		"particle": "susmod:block/dwayne_furnace"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		}
+	]
+}
