@@ -22,5 +22,14 @@
         "stream": true
       }
     ]
+  },
+  "dwayne": {
+    "subtitle": "subtitles.susmod.disc.dwayne",
+    "sounds": [
+      {
+        "name": "susmod:disc/dwayne",
+        "stream": true
+      }
+    ]
   }
 }

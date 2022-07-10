@@ -1,7 +1,7 @@
 package net.pixelatedcorn.susmod;
 
-import net.pixelatedcorn.susmod.block.*;
 import net.fabricmc.api.ModInitializer;
+import net.pixelatedcorn.susmod.block.ModBlocks;
 import net.pixelatedcorn.susmod.item.ModItems;
 import net.pixelatedcorn.susmod.recipes.ModRecipes;
 import net.pixelatedcorn.susmod.sound.ModSounds;

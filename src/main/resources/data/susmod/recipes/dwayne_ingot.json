@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "susmod:rock_ore"
   },
-  "result": "minecraft:nether_star",
-  "experience": 50
+  "result": "susmod:dwayne_ingot",
+  "experience": 10
 }

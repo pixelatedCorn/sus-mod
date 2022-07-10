@@ -2,13 +2,11 @@ package net.pixelatedcorn.susmod.villager;
 
 import com.google.common.collect.ImmutableSet;
 import net.fabricmc.fabric.api.object.builder.v1.villager.VillagerProfessionBuilder;
-import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.village.VillagerProfession;
-import net.minecraft.world.poi.PointOfInterest;
 import net.minecraft.world.poi.PointOfInterestType;
 import net.minecraft.world.poi.PointOfInterestTypes;
 import net.pixelatedcorn.susmod.SusMod;

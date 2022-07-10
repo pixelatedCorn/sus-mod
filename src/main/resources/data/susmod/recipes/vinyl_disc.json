@@ -1,0 +1,8 @@
+{
+  "type": "susmod:dwayne_epic_cooking_recipe",
+  "ingredient": {
+    "item": "susmod:raw_rubber"
+  },
+  "result": "susmod:vinyl_disc",
+  "experience": 10
+}

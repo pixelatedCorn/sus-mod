@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "susmod:block/jukeboxer", "uvlock": true },
+    "facing=west":  { "model": "susmod:block/jukeboxer", "y": 270, "uvlock": true },
+    "facing=east":  { "model": "susmod:block/jukeboxer", "y":  90, "uvlock": true },
+    "facing=south": { "model": "susmod:block/jukeboxer", "y": 180, "uvlock": true },
+    "facing=up": { "model": "susmod:block/jukeboxer", "x": 90, "uvlock": true },
+    "facing=down":  { "model": "susmod:block/jukeboxer", "x":  270, "uvlock": true }
+  }
+}

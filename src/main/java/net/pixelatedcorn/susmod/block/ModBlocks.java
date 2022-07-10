@@ -10,10 +10,11 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.pixelatedcorn.susmod.SusMod;
 import net.pixelatedcorn.susmod.block.dwaynefurnace.DwayneFurnace;
 import net.pixelatedcorn.susmod.block.dwaynefurnace.DwayneFurnaceEntity;
 import net.pixelatedcorn.susmod.item.ModItemGroups;
-import net.pixelatedcorn.susmod.SusMod;
+import net.pixelatedcorn.susmod.sound.ModSounds;
 
 public class ModBlocks {
     public static final CheggerBlock CHEGGER_BLOCK;
@@ -22,6 +23,7 @@ public class ModBlocks {
     public static final ModOreBlock JAMBA_BLOCK;
     public static final DwayneFurnace DWAYNE_FURNACE;
     public static final BlockEntityType<DwayneFurnaceEntity> DWAYNE_FURNACE_ENTITY;
+    public static final JukeBoxer JUKEBOXER;
 
     private static void RegisterBlock(String name, Block block, ItemGroup group) {
         Registry.register(Registry.ITEM, new Identifier(SusMod.MOD_ID, name), new BlockItem(block, new FabricItemSettings().group(group)));
@@ -40,15 +42,17 @@ public class ModBlocks {
         RegisterBlockWithEntity("dwayne_furnace", DWAYNE_FURNACE, DWAYNE_FURNACE_ENTITY, ModItemGroups.STANDARD);
         RegisterBlock("jamba_block", JAMBA_BLOCK, ModItemGroups.STANDARD);
         RegisterBlock("rubber_ore", RUBBER_ORE, ModItemGroups.STANDARD);
+        RegisterBlock("jukeboxer", JUKEBOXER, ModItemGroups.STANDARD);
         SusMod.LOGGER.info("Blocks registered.");
     }
 
     static {
         CHEGGER_BLOCK = new CheggerBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool());
-        THE_ROCK_ORE = new ModOreBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool());
+        THE_ROCK_ORE = new ModOreBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool().sounds(ModSounds.DWAYNE_SOUND_GROUP));
         JAMBA_BLOCK = new ModOreBlock(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool());
-        DWAYNE_FURNACE = new DwayneFurnace(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool());
+        DWAYNE_FURNACE = new DwayneFurnace(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool().sounds(ModSounds.DWAYNE_SOUND_GROUP));
         DWAYNE_FURNACE_ENTITY = FabricBlockEntityTypeBuilder.create(DwayneFurnaceEntity::new, DWAYNE_FURNACE).build(null);
         RUBBER_ORE = new ModOreBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool());
+        JUKEBOXER = new JukeBoxer((FabricBlockSettings.of(Material.WOOD).strength(1.0f)));
     }
 }

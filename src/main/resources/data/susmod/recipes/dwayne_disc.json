@@ -5,11 +5,11 @@
       "item": "susmod:vinyl_disc"
     },
     {
-      "item": "minecraft:milk_bucket"
+      "item": "susmod:dwayne_ingot"
     }
   ],
   "result": {
-    "item": "susmod:disc_china",
+    "item": "susmod:disc_dwayne",
     "count": 1
   }
 }

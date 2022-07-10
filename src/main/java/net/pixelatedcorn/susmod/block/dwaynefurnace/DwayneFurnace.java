@@ -9,12 +9,12 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.pixelatedcorn.susmod.block.ModBlocks;
+import net.pixelatedcorn.susmod.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
 public class DwayneFurnace extends AbstractFurnaceBlock {
@@ -45,7 +45,7 @@ public class DwayneFurnace extends AbstractFurnaceBlock {
             double e = (double)pos.getY();
             double f = (double)pos.getZ() + 0.5;
             if (random.nextDouble() < 0.1) {
-                world.playSound(d, e, f, SoundEvents.BLOCK_FURNACE_FIRE_CRACKLE, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
+                world.playSound(d, e, f, ModSounds.THUD_EVENT, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
             }
 
             Direction direction = (Direction)state.get(FACING);

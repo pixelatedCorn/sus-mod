@@ -4,6 +4,7 @@
   "block.susmod.jamba_block": "Jamba Juice Ore",
   "block.susmod.dwayne_furnace": "Dwayne \"The Rock\" Johnson Furnace",
   "block.susmod.rubber_ore": "Rubber Ore",
+  "block.susmod.jukeboxer": "JukeBoxer™",
 
   "item.susmod.disc_china": "Music Disc",
   "item.susmod.disc_china.desc": "Zǎoshang hǎo zhōngguó",
@@ -12,6 +13,9 @@
   "item.susmod.jamba_juice": "Jamba Juice",
   "item.susmod.vinyl_disc": "Vinyl Disc",
   "item.susmod.raw_rubber": "Raw Rubber",
+  "item.susmod.dwayne_ingot": "Dwayne \"The Rock\" Johnson Ingot",
+  "item.susmod.disc_dwayne": "Music Disc",
+  "item.susmod.disc_dwayne.desc": "Dwayne \"The Rock\" Johnson Music Disc",
 
   "itemGroup.susmod.standard": "Sus Mod",
   "itemGroup.susmod.discs": "Sus Mod Discs"

@@ -1,6 +1,5 @@
 package net.pixelatedcorn.susmod.block;
 
-import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;

@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "susmod:raw_rubber"
   },
-  "result": "susmod:vinyl_disc",
+  "result": "minecraft:black_dye",
   "experience": 5
 }
