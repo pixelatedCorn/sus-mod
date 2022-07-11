@@ -16,6 +16,10 @@
   "item.susmod.dwayne_ingot": "Dwayne \"The Rock\" Johnson Ingot",
   "item.susmod.disc_dwayne": "Music Disc",
   "item.susmod.disc_dwayne.desc": "Dwayne \"The Rock\" Johnson Music Disc",
+  "item.susmod.dwayne_helmet": "Dwayne \"The Rock\" Johnson Helmet",
+  "item.susmod.dwayne_chestplate": "Dwayne \"The Rock\" Johnson Chestplate",
+  "item.susmod.dwayne_leggings": "Dwayne \"The Rock\" Johnson Leggings",
+  "item.susmod.dwayne_boots": "Dwayne \"The Rock\" Johnson Boots",
 
   "itemGroup.susmod.standard": "Sus Mod",
   "itemGroup.susmod.discs": "Sus Mod Discs"

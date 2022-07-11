@@ -65,16 +65,16 @@ public class ModFeatures {
         OVERWORLD_ROCK_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>(
                 Feature.ORE,
                 new OreFeatureConfig(
-                        OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                        OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                         ModBlocks.THE_ROCK_ORE.getDefaultState(),
-                        5
+                        12
                 ));
         OVERWORLD_ROCK_ORE_PLACED_FEATURE = new PlacedFeature(
                 RegistryEntry.of(OVERWORLD_ROCK_ORE_CONFIGURED_FEATURE),
                 Arrays.asList(
-                        CountPlacementModifier.of(30),
+                        CountPlacementModifier.of(3),
                         SquarePlacementModifier.of(),
-                        HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(32))
+                        HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(-52))
                 ));
 
         NETHER_JAMBA_JUICE_CONFIGURED_FEATURE = new ConfiguredFeature<>(

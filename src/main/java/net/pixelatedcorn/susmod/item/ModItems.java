@@ -2,14 +2,17 @@ package net.pixelatedcorn.susmod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.pixelatedcorn.susmod.SusMod;
+import net.pixelatedcorn.susmod.item.armor.DwayneArmorMaterial;
 import net.pixelatedcorn.susmod.sound.ModSounds;
 
 public class ModItems {
@@ -20,6 +23,11 @@ public class ModItems {
     public static final Item VINYL_DISC;
     public static final MusicDisc DWAYNE_DISC;
     public static final Item DWAYNE_INGOT;
+    public static final ArmorMaterial DWAYNE_ARMOR_MATERIAL;
+    public static final Item DWAYNE_HELMET;
+    public static final Item DWAYNE_CHESTPLATE;
+    public static final Item DWAYNE_LEGGINGS;
+    public static final Item DWAYNE_BOOTS;
 
     private static void RegisterItem(String name, Item item) {
         Registry.register(Registry.ITEM, new Identifier(SusMod.MOD_ID, name), item);
@@ -39,16 +47,20 @@ public class ModItems {
         RegisterFuel(JAMBA_JUICE, 800);
         RegisterItem("dwayne_ingot", DWAYNE_INGOT);
         RegisterItem("disc_dwayne", DWAYNE_DISC);
+        RegisterItem("dwayne_helmet", DWAYNE_HELMET);
+        RegisterItem("dwayne_chestplate", DWAYNE_CHESTPLATE);
+        RegisterItem("dwayne_leggings", DWAYNE_LEGGINGS);
+        RegisterItem("dwayne_boots", DWAYNE_BOOTS);
         SusMod.LOGGER.info("Items registered.");
     }
 
     static {
-        BING_CHILLING_DISC = new MusicDisc(0, ModSounds.BING_CHILLING_EVENT, new FabricItemSettings().group(ModItemGroups.DISCS).maxCount(1).rarity(Rarity.RARE));
-        CHINA_DISC = new MusicDisc(1, ModSounds.CHINA_SOUND_EVENT, new FabricItemSettings().group(ModItemGroups.DISCS).maxCount(1).rarity(Rarity.RARE));
+        BING_CHILLING_DISC = new MusicDisc(1, ModSounds.BING_CHILLING_EVENT, new MusicDiscSettings());
+        CHINA_DISC = new MusicDisc(2, ModSounds.CHINA_SOUND_EVENT, new MusicDiscSettings());
         VINYL_DISC = new Item(new FabricItemSettings().group(ModItemGroups.DISCS).maxCount(1));
         RAW_RUBBER = new Item(new FabricItemSettings().group(ModItemGroups.STANDARD));
         DWAYNE_INGOT = new Item(new FabricItemSettings().group(ModItemGroups.STANDARD));
-        DWAYNE_DISC = new MusicDisc(2, ModSounds.DWAYNE_SOUND_EVENT, new FabricItemSettings().group(ModItemGroups.DISCS).maxCount(1).rarity(Rarity.RARE));
+        DWAYNE_DISC = new MusicDisc(3, ModSounds.DWAYNE_SOUND_EVENT, new MusicDiscSettings());
         JAMBA_JUICE = new Item(new FabricItemSettings().group(ModItemGroups.STANDARD)
                 .food(new FoodComponent.Builder().hunger(4).saturationModifier(4.0f)
                 .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 200, 2), 1.0f)
@@ -58,5 +70,10 @@ public class ModItems {
                 .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 200, 2), 1.0f)
                 .alwaysEdible()
                 .build()));
+        DWAYNE_ARMOR_MATERIAL = new DwayneArmorMaterial();
+        DWAYNE_HELMET = new ArmorItem(DWAYNE_ARMOR_MATERIAL, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroups.STANDARD));
+        DWAYNE_CHESTPLATE = new ArmorItem(DWAYNE_ARMOR_MATERIAL, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroups.STANDARD));
+        DWAYNE_LEGGINGS = new ArmorItem(DWAYNE_ARMOR_MATERIAL, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroups.STANDARD));
+        DWAYNE_BOOTS = new ArmorItem(DWAYNE_ARMOR_MATERIAL, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroups.STANDARD));
     }
 }

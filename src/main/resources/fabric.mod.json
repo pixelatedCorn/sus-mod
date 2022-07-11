@@ -12,6 +12,9 @@
     "homepage": "",
     "sources": ""
   },
+  "mixins": [
+    "susmod.mixins.json"
+  ],
 
   "license": "CC0-1.0",
   "icon": "assets/modid/icon.png",
