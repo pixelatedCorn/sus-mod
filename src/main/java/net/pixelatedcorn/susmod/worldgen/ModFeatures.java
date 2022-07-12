@@ -67,7 +67,7 @@ public class ModFeatures {
                 new OreFeatureConfig(
                         OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                         ModBlocks.THE_ROCK_ORE.getDefaultState(),
-                        12
+                        6
                 ));
         OVERWORLD_ROCK_ORE_PLACED_FEATURE = new PlacedFeature(
                 RegistryEntry.of(OVERWORLD_ROCK_ORE_CONFIGURED_FEATURE),

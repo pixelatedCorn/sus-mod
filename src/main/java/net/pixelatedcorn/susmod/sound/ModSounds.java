@@ -38,7 +38,7 @@ public class ModSounds {
         BING_CHILLING_EVENT = new SoundEvent(BING_CHILLING_SOUND);
         CHINA_SOUND = new Identifier(SusMod.MOD_ID, "china");
         CHINA_SOUND_EVENT = new SoundEvent(CHINA_SOUND);
-        DWAYNE_SOUND_GROUP = new BlockSoundGroup(1f, 4f, THUD_EVENT, THUD_EVENT, THUD_EVENT, THUD_EVENT, THUD_EVENT);
+        DWAYNE_SOUND_GROUP = new BlockSoundGroup(1f, 1f, THUD_EVENT, THUD_EVENT, THUD_EVENT, THUD_EVENT, THUD_EVENT);
         DWAYNE_SOUND = new Identifier(SusMod.MOD_ID, "dwayne");
         DWAYNE_SOUND_EVENT = new SoundEvent(DWAYNE_SOUND);
     }

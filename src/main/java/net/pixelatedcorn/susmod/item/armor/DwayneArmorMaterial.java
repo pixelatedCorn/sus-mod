@@ -12,7 +12,7 @@ public class DwayneArmorMaterial implements ArmorMaterial {
     private static final int[] PROTECTION_VALES = new int[] {4, 7, 9, 4};
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()] * 2;
+        return BASE_DURABILITY[slot.getEntitySlotId()] * 42;
     }
 
     @Override

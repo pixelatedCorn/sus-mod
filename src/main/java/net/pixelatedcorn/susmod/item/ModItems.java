@@ -5,14 +5,12 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.pixelatedcorn.susmod.SusMod;
 import net.pixelatedcorn.susmod.item.armor.DwayneArmorMaterial;
+import net.pixelatedcorn.susmod.item.tools.*;
 import net.pixelatedcorn.susmod.sound.ModSounds;
 
 public class ModItems {
@@ -28,6 +26,12 @@ public class ModItems {
     public static final Item DWAYNE_CHESTPLATE;
     public static final Item DWAYNE_LEGGINGS;
     public static final Item DWAYNE_BOOTS;
+    public static final DwayneSword DWAYNE_SWORD;
+    public static final PickaxeItem DWAYNE_PICKAXE;
+    public static final AxeItem DWAYNE_AXE;
+    public static final ShovelItem DWAYNE_SHOVEL;
+    public static final HoeItem DWAYNE_HOE;
+    public static final ToolMaterial DWAYNE_TOOL_MATERIAL;
 
     private static void RegisterItem(String name, Item item) {
         Registry.register(Registry.ITEM, new Identifier(SusMod.MOD_ID, name), item);
@@ -51,6 +55,11 @@ public class ModItems {
         RegisterItem("dwayne_chestplate", DWAYNE_CHESTPLATE);
         RegisterItem("dwayne_leggings", DWAYNE_LEGGINGS);
         RegisterItem("dwayne_boots", DWAYNE_BOOTS);
+        RegisterItem("dwayne_sword", DWAYNE_SWORD);
+        RegisterItem("dwayne_pickaxe", DWAYNE_PICKAXE);
+        RegisterItem("dwayne_axe", DWAYNE_AXE);
+        RegisterItem("dwayne_shovel", DWAYNE_SHOVEL);
+        RegisterItem("dwayne_hoe", DWAYNE_HOE);
         SusMod.LOGGER.info("Items registered.");
     }
 
@@ -75,5 +84,12 @@ public class ModItems {
         DWAYNE_CHESTPLATE = new ArmorItem(DWAYNE_ARMOR_MATERIAL, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroups.STANDARD));
         DWAYNE_LEGGINGS = new ArmorItem(DWAYNE_ARMOR_MATERIAL, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroups.STANDARD));
         DWAYNE_BOOTS = new ArmorItem(DWAYNE_ARMOR_MATERIAL, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroups.STANDARD));
+        DWAYNE_TOOL_MATERIAL = new DwayneToolMaterial();
+        DWAYNE_SWORD = new DwayneSword(new FabricItemSettings().group(ModItemGroups.STANDARD));
+        DWAYNE_PICKAXE = new ModPickaxeItem(DWAYNE_TOOL_MATERIAL, 1, -2.8f, new FabricItemSettings().group(ModItemGroups.STANDARD));
+        DWAYNE_AXE = new ModAxeItem(DWAYNE_TOOL_MATERIAL, 7.f, -3.2f, new FabricItemSettings().group(ModItemGroups.STANDARD));
+        DWAYNE_SHOVEL = new ModShovelItem(DWAYNE_TOOL_MATERIAL, 1, -2.8f, new FabricItemSettings().group(ModItemGroups.STANDARD));
+        DWAYNE_HOE = new ModHoeItem(DWAYNE_TOOL_MATERIAL, 0, -0.2f, new FabricItemSettings().group(ModItemGroups.STANDARD));
+
     }
 }
